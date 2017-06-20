@@ -1,0 +1,20 @@
+{
+  "name": "phase-2-challenge",
+  "version": "1.0.0",
+  "description": "Phase two challenge",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register ./part-1/tests.js"
+  },
+  "author": "Eugene Baah",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-preset-env": "^1.5.2",
+    "chai": "^4.0.2",
+    "chai-change": "^2.1.2",
+    "mocha": "^3.4.2",
+    "npm": "^5.0.3"
+  }
+}
