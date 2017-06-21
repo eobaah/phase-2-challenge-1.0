@@ -181,17 +181,17 @@ Design a layout to match the following wireframe:
 
 ### Requirements
 
-- [ ] __10:__ All files are stored under the `part-3/` folder
-- [ ] __20:__ No third party CSS libraries are used (all code must be written from scratch)
-- [ ] __10:__ HTML and CSS are separated into their own files.
-- [ ] __20:__ Page has a full-width header with the site title "Grocer" and a button "Cart"
-- [ ] __10:__ Site title "Grocer" is aligned to the left
-- [ ] __10:__ "Cart" button is aligned to the right
-- [ ] __20:__ Page has a "Sections" sidebar with all sections for grocery items
-- [ ] __10:__ Page has a main content area showing each of the grocery items
-- [ ] __20:__ Main content lists all grocery items' name, price, and an "Add to cart" button
+- [x] __10:__ All files are stored under the `part-3/` folder
+- [x] __20:__ No third party CSS libraries are used (all code must be written from scratch)
+- [x] __10:__ HTML and CSS are separated into their own files.
+- [x] __20:__ Page has a full-width header with the site title "Grocer" and a button "Cart"
+- [x] __10:__ Site title "Grocer" is aligned to the left
+- [x] __10:__ "Cart" button is aligned to the right
+- [x] __20:__ Page has a "Sections" sidebar with all sections for grocery items
+- [x] __10:__ Page has a main content area showing each of the grocery items
+- [x] __20:__ Main content lists all grocery items' name, price, and an "Add to cart" button
 - [ ] __20:__ Clicking on a section in the "Sections" sidebar will jump to that section
-- [ ] __10:__ Main content organizes all grocery items by section
+- [x] __10:__ Main content organizes all grocery items by section
 
 ## Part 4: Quiz time!
 
