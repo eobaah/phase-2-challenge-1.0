@@ -2,7 +2,8 @@ import chai, { expect } from 'chai'
 import chaiChange from 'chai-change'
 import { weekday,
          snippet,
-         numProps } from './functions.js'
+         numProps,
+         filterBetween } from './functions.js'
 
 chai.use(chaiChange)
 
@@ -42,10 +43,10 @@ describe('snippet()', function(){
     expect( snippet( string, maxlength ) ).to.equal('Hello World!')
   })
 
-  it('Function returns the entire string without an ellipsis if the length of string is less than the maxlength', function(){
+  it('Ensures that Hello World! does not equal Hello World without the exclamation mark ', function(){
     let string = "Hello World!"
     let maxlength = 12
-    expect( snippet( string, maxlength ) ).to.equal('Hello World')
+    expect( snippet( string, maxlength ) ).to.not.equal('Hello World')
   })
 })
 
@@ -79,5 +80,22 @@ describe('numProps()', function(){
       'location', 'Atlanta']
 
     expect( numProps( friend ) ).to.equal('Please enter a valid input')
+  })
+})
+
+describe('filterBetween()', function(){
+
+  it('should be a function', function(){
+    expect( filterBetween ).to.be.a('function')
+  })
+
+  it('Return an array of elements between the min and max', function(){
+    let arr = [1, 2, 3, 4, 5, 6, 7]
+    expect( filterBetween( arr, 3, 6 ) ).to.eql([3, 4, 5, 6])
+  })
+
+  it('Returns invalid range', function(){
+    let arr = [1, 2, 3, 4, 5, 6, 7]
+    expect( filterBetween( arr, 10, 12 ) ).to.eql('Please select a valid range')
   })
 })

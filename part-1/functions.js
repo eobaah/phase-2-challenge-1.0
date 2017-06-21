@@ -40,8 +40,23 @@ function numProps( obj ) {
   }
 }
 
+function filterBetween( arr, min, max ) {
+  var filterNums = arr.filter( function( num ){
+    if ( min <= num && num <= max ) {
+      return num
+    }
+  })
+  if ( filterNums.length !== 0 ) {
+    return filterNums
+  } else {
+    return 'Please select a valid range'
+  }
+}
+
+
 module.exports = {
   weekday,
   snippet,
-  numProps
+  numProps,
+  filterBetween
 }

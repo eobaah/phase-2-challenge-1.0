@@ -104,10 +104,10 @@ filterBetween(arr, 5, 10) // => [5, 6, 7]
 
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `filterBetween()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `filterBetween()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `filterBetween()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `filterBetween()` are passing.
+- [x] __10:__ A test using expected/valid inputs for the `filterBetween()` function is written in `tests.js`.
+- [x] __10:__ A test using unexpected/invalid inputs for the `filterBetween()` function is written in `tests.js`.
+- [x] __30:__ Correct implementation of the `filterBetween()` is defined in `functions.js`.
+- [x] __10:__ Tests for `filterBetween()` are passing.
 
 ## Part 2: Extract data from JSON file
 
