@@ -8,6 +8,7 @@ body {
 }
 
 .title-bar {
+  border: 5px solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,14 +20,26 @@ body {
 }
 
 .sections {
+  border: 5px solid black;
+  border-top: none;
   display: flex;
   flex-direction: column;
   width: 30%;
 }
 
+.section-nav-title {
+  background-color: grey;
+}
+
+.grocery-sections a {
+  text-decoration: none;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  overflow: scroll;
   width: 70%;
 }
 
@@ -34,10 +47,14 @@ body {
   display: flex;
   flex-direction: column;
 }
+.main-section-output-title h1 {
+  font-size: 3em;
+}
 
-.main-section-output-produce {
+.main-content-section {
   display: flex;
   flex-direction: column;
+  margin: 4% 0;
 }
 
 .main-section-output-produce-title {
@@ -54,9 +71,9 @@ body {
 }
 
 .add-to-cart-btn {
-  align-self: center;
+  align-self: flex-end;
   height: 2em;
-  margin: 0 3% 0 15%;
+  margin: 1% 3% 1% 15%;
 }
 
 .section-titles {

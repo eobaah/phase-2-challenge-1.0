@@ -190,7 +190,7 @@ Design a layout to match the following wireframe:
 - [x] __20:__ Page has a "Sections" sidebar with all sections for grocery items
 - [x] __10:__ Page has a main content area showing each of the grocery items
 - [x] __20:__ Main content lists all grocery items' name, price, and an "Add to cart" button
-- [ ] __20:__ Clicking on a section in the "Sections" sidebar will jump to that section
+- [x] __20:__ Clicking on a section in the "Sections" sidebar will jump to that section
 - [x] __10:__ Main content organizes all grocery items by section
 
 ## Part 4: Quiz time!
