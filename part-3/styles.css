@@ -31,6 +31,12 @@ body {
   background-color: grey;
 }
 
+.section-nav-title h2 {
+  padding: 0 0 0 1%;
+}
+.grocery-sections {
+  padding: 0 0 0 1%;
+}
 .grocery-sections a {
   text-decoration: none;
 }
@@ -40,6 +46,7 @@ body {
   flex-direction: column;
   height: 100vh;
   overflow: scroll;
+  padding: 0 0 0 1%;
   width: 70%;
 }
 
@@ -66,10 +73,6 @@ body {
   flex-grow: 1;
 }
 
-.item-price {
-  /*margin: 0 0%;*/
-}
-
 .add-to-cart-btn {
   align-self: flex-end;
   height: 2em;
@@ -78,6 +81,7 @@ body {
 
 .section-titles {
   font-style: italic;
+  margin: 1% 0;
 }
 
 .main-section-output-produce-details {
@@ -86,6 +90,7 @@ body {
 }
 
 .main-section-output-produce-details-items {
+  align-items: center;
   display: flex;
   flex-direction: row;
 }
