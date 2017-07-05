@@ -19,9 +19,9 @@ describe('weekday()', function(){
   })
 
 
-  it('Checks sad path where function returns Monday', function(){
-    let date = new Date(2017, 5, 19)
-    expect( weekday(date) ).to.not.equal('Tuesday')
+  it.only('Checks sad path where function returns Monday', function(){
+    let date = new Date(2017, "May", 19)
+    expect( weekday(date) ).to.throw('Please enter a valid date with the format YYYY,MM,DD')
   })
 })
 
@@ -46,7 +46,7 @@ describe('snippet()', function(){
   it('Ensures that Hello World! does not equal Hello World without the exclamation mark ', function(){
     let string = "Hello World!"
     let maxlength = 12
-    expect( snippet( string, maxlength ) ).to.not.equal('Hello World')
+    expect( snippet( string, maxlength ) ).to.not.equal('Hello World``')
   })
 })
 

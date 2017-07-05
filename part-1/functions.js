@@ -13,7 +13,7 @@ function weekday( date ) {
   if ( 0 <= date.getDay() < 7 && date instanceof Date && !isNaN( date.valueOf() ) ) {
     return days[ date.getDay() ]
   } else {
-    return 'Please enter a valid date with the format YYYY,MM,DD'
+    throw(new Error( 'Please enter a valid date with the format YYYY,MM,DD' ))
   }
 }
 
@@ -49,7 +49,7 @@ function filterBetween( arr, min, max ) {
   if ( filterNums.length !== 0 ) {
     return filterNums
   } else {
-    return 'Please select a valid range'
+    throw(new Error( 'Please select a valid range' ))
   }
 }
 
